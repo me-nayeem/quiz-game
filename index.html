@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section> 
+        <h1><span>Play Quiz Game</span> to Improve your general knowladge</h1>
+        <div class="container">
+            <h3>score : 0</h3>
+            <div class="num-time">
+                    <p class="timer">time left: 30</p>
+            </div>
+            <div class="question-part">
+                <div class="question"><Span>01. </Span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, veritatis.</div>
+                <div class="A-num"><span>A.</span> Lorem, ipsum dolor.</div>
+                <div class="A-num"><span>B.</span> lorem</div>
+                <div class="A-num"><span>C.</span> Lorem, ipsum.</div>
+                <div class="A-num"><span>D.</span> Lorem ipsum dolor sit.</div>
+                <div class="ans">
+                    <span class="select">the answer is: A</span>
+                </div>
+            </div>
+            <div class="final-ans">
+                <h1 id="final-msg">Final status will popup here...</h1>
+            </div>
+        </div>
+    </section>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

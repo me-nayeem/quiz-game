@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+
+/* root function */
+
+:root{
+    --bg-color: #151515;
+    --second-bg-color: #3333339a;
+    --main-color: rgba(0, 255, 255, 0.904);
+    --white-color: #fff;
+    --dj-color: #fff3;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--white-color);
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    margin: 0;     
+    position: relative;          
+}
+
+section h1{
+    color: var(--white-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    /* position: absolute; */
+}
+
+section h1 span{
+    color: var(--main-color);
+    text-shadow: 0 0 1rem var(--main-color);
+}
+
+
+.container{
+    height: 70%;
+    width: 60%;
+    padding: 0 3.5rem;
+    background-color: var(--second-bg-color);
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.A-num, .question{
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--bg-color);
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.num-time{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    font-size: 2rem;
+    min-width: 15rem;
+    text-align: center;
+    box-shadow: 0 0 1rem var(--main-color);
+    border-radius: 1rem;
+}
+
+
+.question-part{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.question-part .question{
+    grid-column: 1 / -1;
+    border-radius: 0.5rem;
+    border: 1px solid var(--bg-color);
+}
+
+.question-part .ans{
+    grid-column: 1 / -1;
+    background-color: var(--bg-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--bg-color);
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ans a span{
+    align-items: center;
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+
+
+.ans a{
+    border-radius: 50%;
+    margin: 0 4rem;
+}
+
+.ans .select{
+    color: var(--white-color);
+}
+.final-ans h1{
+    font-weight: 600;
+    color: var(--bg-color);
+    position: relative;
+    top: 1rem;
+}
+
+.final-ans{
+    width: 70%;
+    height: auto;
+    text-align: center;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    margin-bottom: 1.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.container h3{
+    font-size: 2rem;
+    color: var(--white-color);
+    padding-top: 2rem;
+}
+
+
+/* break points */
+
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        height: 70%;
+    }
+
+    .final-ans h1 {
+        padding-top: 1rem;
+        
+    }
+    .final-ans {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 888px) {
+    .container {
+        grid-template-columns:  1fr;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 832px) {
+   .ans {
+    min-width: 20rem;
+   }
+    .ans span{
+        font-size: 1.5rem;
+        white-space: nowrap;
+        margin-right: -2rem;
+    }
+
+    .ans a span{
+        font-size: 1.6rem;
+    }
+
+ 
+}
+
+@media screen and (max-width: 734px){
+
+    .ans a{
+        margin: 0 1.5rem;
+    }
+    
+    .ans .select {
+        position: relative;
+        right: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 598px) {
+    section h1 {
+        font-size: 1.8rem;
+        white-space: wrap;
+    }
+}
